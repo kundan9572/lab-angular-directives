@@ -1,0 +1,13 @@
+<div>
+  <h3>This is a attribute directive</h3>
+  <span [class.red]="true">Attribute Change</span> <br>
+  <span [ngClass]="{'blue':true}">Attribute change by using NgClass</span> <br>
+  <span [ngStyle]="{'font-size':'20px','color':'green'}">Attribute change by using NgStyle</span>
+  <br><br>
+  <span [class.cyan]="showColor">Attribute change</span> <br>
+  <span [ngClass]="{'orange':showColor}">Attribute change by using NgClass</span><br>
+  <input type="button" value="Change Color" (click)="changeColor()" /> <br> <br>
+  <span [class.cyan]="showColor">Attribute change</span> <br>
+  <span [ngClass]="{'cyan':showColor, 'red' : showColor}">Attribute change by using NgClass</span>
+  <br>
+</div>
